@@ -6,7 +6,6 @@ end
 signature FALGEBRA = sig
   type 'a t
   datatype mu = Mu of mu t
-  val unfold : mu -> mu t
   val cata : ('a t -> 'a) -> mu -> 'a
 end
 
